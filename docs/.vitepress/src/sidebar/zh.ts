@@ -4,15 +4,15 @@ export const sidebar = [
     items: [
       {
         text: "简介", items: [
-          { text: "环境信息", link: "/zh/examples/introduction/markdown" },
-          { text: "接入准备", link: "/zh/examples/introduction/build" },
+          { text: "环境信息", link: "/zh/base/environmental" },
+          { text: "接入准备", link: "/zh/base/prepare" },
           { text: "固定参数说明", link: "/zh/examples/api/test" },
         ]
       },
       { text: "通用规则", items: [
-          { text: "请求规则", link: "/zh/examples/introduction/markdown" },
-          { text: "签名规则", link: "/zh/examples/introduction/build" },
-          { text: "响应规则", link: "/zh/examples/api/test" },
+          { text: "请求规则", link: "/zh/base/request_rules"},
+          { text: "签名规则", link: "/zh/base/signature_rules" },
+          { text: "响应规则", link: "/zh/base/response_rules" },
         ]
       },
     ],

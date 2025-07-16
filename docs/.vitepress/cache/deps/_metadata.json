@@ -1,49 +1,49 @@
 {
-  "hash": "c107019f",
+  "hash": "0098fdc8",
   "configHash": "bf7dc5e3",
-  "lockfileHash": "84f29420",
-  "browserHash": "acecd9a5",
+  "lockfileHash": "cc5143ee",
+  "browserHash": "5f6ff50c",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.5.17/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a9bbccdd",
+      "fileHash": "594bc418",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.7.7/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "5118065f",
+      "fileHash": "3c114743",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@12.8.2/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "c1039092",
+      "fileHash": "2b767edc",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/.pnpm/@vueuse+integrations@12.8.2_d47b100f804dd0ea0b358921cb9f49bf/node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "f929c50a",
+      "fileHash": "4c94f518",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "f00b656c",
+      "fileHash": "58d17803",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/.pnpm/minisearch@7.1.2/node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "4fb29c6b",
+      "fileHash": "1d19cf9b",
       "needsInterop": false
     },
     "@escook/vitepress-theme": {
       "src": "../../../../node_modules/.pnpm/@escook+vitepress-theme@1.3.1/node_modules/@escook/vitepress-theme/dist/index.js",
       "file": "@escook_vitepress-theme.js",
-      "fileHash": "2e5c9c20",
+      "fileHash": "1e00ff2a",
       "needsInterop": false
     }
   },
