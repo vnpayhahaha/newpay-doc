@@ -22,7 +22,7 @@ export const sidebar = [
     items: [
       {
         text: "收款", items: [
-          { text: "创建订单", link: "/zh/examples/api/alipay" },
+          { text: "创建订单", link: "/zh/collection_order/create" },
           { text: "查询订单", link: "/zh/examples/api/wechat" },
           { text: "回调通知", link: "/zh/examples/api/qq" },
           { text: "提交UTR", link: "/zh/examples/api/qq" },
