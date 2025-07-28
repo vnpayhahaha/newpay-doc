@@ -13,43 +13,43 @@
         <div class="api-meta">
           <div class="meta-item">
             <i class="fas fa-bolt"></i>
-            <span>状态: {{ apiData.status ? '启用' : '禁用' }}</span>
+            <span>State: {{ apiData.status ? 'Enable' : 'Disable' }}</span>
           </div>
           <div class="meta-item">
             <i class="fas fa-tachometer-alt"></i>
-            <span>速率限制: {{ apiData.rate_limit }} 次/分钟</span>
+            <span>Speed limit: {{ apiData.rate_limit }} Times/minute</span>
           </div>
           <div class="meta-item">
             <i class="fas fa-lock"></i>
-            <span>认证方式: {{ authModeText }}</span>
+            <span>Authentication method: {{ authModeText }}</span>
           </div>
         </div>
       </div>
     </div>
 
     <!-- 接口描述部分 -->
-    <h2 id="接口描述" class="section-header" tabindex="-1">
-      接口描述
-      <a class="header-anchor" href="#接口描述" aria-label="Permalink to &quot;接口描述&quot;">​</a>
+    <h2 id="Interface Description" class="section-header" tabindex="-1">
+      Interface Description
+      <a class="header-anchor" href="#Interface Description" aria-label="Permalink to &quot;Interface Description&quot;">​</a>
     </h2>
     <div class="section-content">
-      <p>{{ apiData.description }}</p>
+      <p>{{ apiData.description_en }}</p>
     </div>
 
     <!-- 请求参数部分 -->
-    <h2 id="请求参数" class="section-header" tabindex="-1">
-      请求参数
-      <a class="header-anchor" href="#请求参数" aria-label="Permalink to &quot;请求参数&quot;">​</a>
+    <h2 id="Request parameters" class="section-header" tabindex="-1">
+      Request parameters
+      <a class="header-anchor" href="#Request parameters" aria-label="Permalink to &quot;Request parameters&quot;">​</a>
     </h2>
     <div class="vp-table-wrapper">
       <table tabindex="0">
         <thead>
           <tr>
-            <th>参数名</th>
-            <th>类型</th>
-            <th>必填</th>
-            <th>示例值</th>
-            <th>描述</th>
+            <th>Parameter Name</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Example value</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
@@ -58,7 +58,7 @@
             <td>{{ param.field_type }}</td>
             <td>
               <span :class="['required', param.not_null === 1 ? 'required-true' : 'required-false']">
-                {{ param.not_null === 1 ? '是' : '否' }}
+                {{ param.not_null === 1 ? 'Yes' : 'No' }}
               </span>
             </td>
             <td>{{ param.value }}</td>
@@ -69,9 +69,9 @@
     </div>
 
     <!-- 请求示例部分 -->
-    <h3 id="请求示例" class="section-header" tabindex="-1">
-      请求示例
-      <a class="header-anchor" href="#请求示例" aria-label="Permalink to &quot;请求示例&quot;">​</a>
+    <h3 id="Request Example" class="section-header" tabindex="-1">
+      Request Example
+      <a class="header-anchor" href="#Request Example" aria-label="Permalink to &quot;Request Example&quot;">​</a>
     </h3>
     <div class="vp-doc">
       <div class="vp-code-block">
@@ -89,19 +89,19 @@
     </div>
 
     <!-- 响应参数部分 -->
-    <h2 id="响应参数" class="section-header" tabindex="-1">
-      响应参数
-      <a class="header-anchor" href="#响应参数" aria-label="Permalink to &quot;响应参数&quot;">​</a>
+    <h2 id="Response parameters" class="section-header" tabindex="-1">
+      Response parameters
+      <a class="header-anchor" href="#Response parameters" aria-label="Permalink to &quot;Response parameters&quot;">​</a>
     </h2>
     <div class="vp-table-wrapper">
       <table tabindex="0">
         <thead>
           <tr>
-            <th>参数名</th>
-            <th>类型</th>
-            <th>必填</th>
-            <th>示例值</th>
-            <th>描述</th>
+            <th>Parameter Name</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Example value</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
@@ -110,7 +110,7 @@
             <td>{{ param.field_type }}</td>
                 <td>
               <span :class="['required', param.not_null === 1 ? 'required-true' : 'required-false']">
-                {{ param.not_null === 1 ? '是' : '否' }}
+                {{ param.not_null === 1 ? 'Yes' : 'No' }}
               </span>
             </td>
             <td>{{ param.value }}</td>
@@ -121,9 +121,9 @@
     </div>
 
     <!-- 响应示例部分 -->
-    <h3 id="响应示例" class="section-header" tabindex="-1">
-      响应示例
-      <a class="header-anchor" href="#响应示例" aria-label="Permalink to &quot;响应示例&quot;">​</a>
+    <h3 id="Response Example" class="section-header" tabindex="-1">
+      Response Example
+      <a class="header-anchor" href="#Response Example" aria-label="Permalink to &quot;Response Example&quot;">​</a>
     </h3>
     <div class="vp-doc">
       <div class="vp-code-block">
@@ -141,31 +141,31 @@
     </div>
 
     <!-- 更新信息部分 -->
-    <h2 id="更新信息" class="section-header" tabindex="-1">
-      更新信息
-      <a class="header-anchor" href="#更新信息" aria-label="Permalink to &quot;更新信息&quot;">​</a>
+    <h2 id="Update information" class="section-header" tabindex="-1">
+      Update information
+      <a class="header-anchor" href="#Update information" aria-label="Permalink to &quot;Update information&quot;">​</a>
     </h2>
     <div class="update-info">
       <div class="meta-item">
         <i class="fas fa-calendar-plus"></i>
-        <span>创建时间: {{ apiData.created_at }}</span>
+        <span>Creation time: {{ apiData.created_at }}</span>
       </div>
       <div class="meta-item">
         <i class="fas fa-calendar-check"></i>
-        <span>更新时间: {{ apiData.updated_at }}</span>
+        <span>Update time: {{ apiData.updated_at }}</span>
       </div>
     </div>
 
     <!-- 加载状态和错误处理 -->
     <div v-if="loading" class="loading-container">
       <div class="spinner"></div>
-      <p>正在获取 API 数据，请稍候...</p>
+      <p>Obtaining API data, please wait...</p>
     </div>
 
     <div v-else-if="error" class="error-container">
       <p><i class="icon fas fa-exclamation-triangle"></i> {{ error }}</p>
       <button class="refresh-btn" @click="fetchApiData">
-        <i class="fas fa-sync-alt"></i> 重新加载
+        <i class="fas fa-sync-alt"></i> RELOAD
       </button>
     </div>
   </div>
@@ -202,10 +202,15 @@ interface ApiData {
   api_uri: string
   http_method: string
   request_params: string
+  request_params_en: string
   request_example: string
+  request_example_en: string
   response_params: string
+  response_params_en: string
   response_example: string
+  response_example_en: string
   description: string
+  description_en: string
   status: boolean
   rate_limit: number
   auth_mode: number
@@ -222,10 +227,15 @@ const apiData = ref<ApiData>({
   api_uri: '',
   http_method: 'POST',
   request_params: '[]',
+  request_params_en: '[]',
   request_example: '{}',
+  request_example_en: '{}',
   response_params: '[]',
+  response_params_en: '[]',
   response_example: '{}',
+  response_example_en: '{}',
   description: '',
+  description_en: '',
   status: false,
   rate_limit: 0,
   auth_mode: 1,
@@ -251,7 +261,7 @@ const authModeText = computed(() => {
 
 const requestParams = computed<RequestParam[]>(() => {
   try {
-    return JSON.parse(apiData.value.request_params)
+    return JSON.parse(apiData.value.request_params_en)
   } catch (e) {
     console.error('解析请求参数失败:', e)
     return []
@@ -260,7 +270,7 @@ const requestParams = computed<RequestParam[]>(() => {
 
 const responseParams = computed<ResponseParam[]>(() => {
   try {
-    return JSON.parse(apiData.value.response_params)
+    return JSON.parse(apiData.value.response_params_en)
   } catch (e) {
     console.error('解析响应参数失败:', e)
     return []
@@ -269,7 +279,7 @@ const responseParams = computed<ResponseParam[]>(() => {
 
 const requestExample = computed(() => {
   try {
-    return JSON.parse(apiData.value.request_example)
+    return JSON.parse(apiData.value.request_example_en)
   } catch (e) {
     console.error('解析请求示例失败:', e)
     return {}
@@ -278,7 +288,7 @@ const requestExample = computed(() => {
 
 const responseExample = computed(() => {
   try {
-    return JSON.parse(apiData.value.response_example)
+    return JSON.parse(apiData.value.response_example_en)
   } catch (e) {
     console.error('解析响应示例失败:', e)
     return {}

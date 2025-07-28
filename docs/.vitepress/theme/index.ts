@@ -2,6 +2,7 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import EnvVar from './components/EnvVar.vue'
 import OpenApi from './components/OpenApi.vue'
+import OpenApiEn from './components/OpenApiEn.vue'
 // 1. import vitepress theme
 import escookTheme from '@escook/vitepress-theme'
 // 2. import matching CSS styles (this step cannot be omitted)
@@ -22,5 +23,6 @@ export default {
       // expand custom features...
       app.component('EnvVar', EnvVar);
       app.component('OpenApi', OpenApi);
+      app.component('OpenApiEn', OpenApiEn);
   }
 } satisfies Theme

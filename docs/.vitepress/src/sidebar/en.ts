@@ -1,53 +1,53 @@
 export const sidebar = [
   {
-    text: "基础",
+    text: "Base",
     items: [
       {
-        text: "简介", items: [
-          { text: "环境信息", link: "/zh/examples/introduction/markdown" },
-          { text: "接入准备", link: "/zh/examples/introduction/build" },
-          { text: "固定参数说明", link: "/zh/examples/api/test" },
+        text: "Introduction", items: [
+          { text: "Environment Information", link: "/en/base/environmental" },
+          { text: "Groundwork", link: "/en/base/prepare" },
+          { text: "Fixed parameter description", link: "/en/examples/api/test" },
         ]
       },
-      { text: "通用规则", items: [
-          { text: "请求规则", link: "/zh/examples/introduction/markdown" },
-          { text: "签名规则", link: "/zh/examples/introduction/build" },
-          { text: "响应规则", link: "/zh/examples/api/test" },
+      { text: "General rules", items: [
+          { text: "Request Rules", link: "/en/base/request_rules" },
+          { text: "Signature rules", link: "/en/base/signature_rules" },
+          { text: "Response rules", link: "/en/base/response_rules" },
         ]
       },
     ],
   },
   {
-    text: "接口",
+    text: "Interface",
     items: [
       {
-        text: "收款", items: [
-          { text: "创建订单", link: "/zh/examples/api/alipay" },
-          { text: "查询订单", link: "/zh/examples/api/wechat" },
-          { text: "回调通知", link: "/zh/examples/api/qq" },
-          { text: "提交UTR", link: "/zh/examples/api/qq" },
+        text: "Receive Payment", items: [
+          { text: "Create Order", link: "/en/collection_order/create" },
+          { text: "Order Inquiry", link: "/en/examples/api/wechat" },
+          { text: "Callback Notification", link: "/en/examples/api/qq" },
+          { text: "Submit UTR", link: "/en/examples/api/qq" },
         ]
       },
-      { text: "付款", items: [
-          { text: "创建订单", link: "/zh/examples/api/alipay" },
-          { text: "查询订单", link: "/zh/examples/api/wechat" },
-          { text: "回调通知", link: "/zh/examples/api/qq" },
+      { text: "Payment", items: [
+          { text: "Create Order", link: "/en/examples/api/alipay" },
+          { text: "Order Inquiry", link: "/en/examples/api/wechat" },
+          { text: "Callback Notification", link: "/en/examples/api/qq" },
         ]
       },
-      { text: "余额查询", link: "/zh/examples/api/test" },
+      { text: "Balance Inquiry", link: "/en/examples/api/test" },
     ],
   },
   {
-    text: "数据字典",
+    text: "Data Dictionary",
     items: [
       {
-        text: "错误代码",
+        text: "Error Code",
       },
       {
-        text: "收款订单状态",
+        text: "Collection Order Status",
       },
       {
-        text: "付款订单状态",
+        text: "Payment Order Status",
       }
     ]
   }

@@ -8,3 +8,4 @@ dist-ssr
 pnpm-lock.yaml
 .idea*
 .env
+/docs/.vitepress/cache/
