@@ -3,17 +3,23 @@ export const sidebar = [
     text: "Base",
     items: [
       {
-        text: "Introduction", items: [
+        text: "Introduction",
+        items: [
           { text: "Environment Information", link: "/en/base/environmental" },
           { text: "Groundwork", link: "/en/base/prepare" },
-          { text: "Fixed parameter description", link: "/en/examples/api/test" },
-        ]
+          {
+            text: "Fixed parameter description",
+            link: "/en/examples/api/test",
+          },
+        ],
       },
-      { text: "General rules", items: [
+      {
+        text: "General rules",
+        items: [
           { text: "Request Rules", link: "/en/base/request_rules" },
           { text: "Signature rules", link: "/en/base/signature_rules" },
           { text: "Response rules", link: "/en/base/response_rules" },
-        ]
+        ],
       },
     ],
   },
@@ -21,18 +27,21 @@ export const sidebar = [
     text: "Interface",
     items: [
       {
-        text: "Receive Payment", items: [
+        text: "Receive Payment",
+        items: [
           { text: "Create Order", link: "/en/collection_order/create" },
           { text: "Order Inquiry", link: "/en/examples/api/wechat" },
           { text: "Callback Notification", link: "/en/examples/api/qq" },
           { text: "Submit UTR", link: "/en/examples/api/qq" },
-        ]
+        ],
       },
-      { text: "Payment", items: [
-          { text: "Create Order", link: "/en/examples/api/alipay" },
+      {
+        text: "Payment",
+        items: [
+          { text: "Create Order", link: "/en/disbursement_order/create" },
           { text: "Order Inquiry", link: "/en/examples/api/wechat" },
           { text: "Callback Notification", link: "/en/examples/api/qq" },
-        ]
+        ],
       },
       { text: "Balance Inquiry", link: "/en/examples/api/test" },
     ],
@@ -48,7 +57,7 @@ export const sidebar = [
       },
       {
         text: "Payment Order Status",
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];

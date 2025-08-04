@@ -4,7 +4,9 @@
     <div class="api-card">
       <div class="card-header">
         <div class="api-title">
-          <span :class="['api-method', methodClass]">{{ apiData.http_method.toUpperCase() }}</span>
+          <span :class="['api-method', methodClass]">{{
+            apiData.http_method.toUpperCase()
+          }}</span>
           <div>
             <h1 class="api-name">{{ apiData.api_name }}</h1>
             <div class="api-uri">{{ apiData.api_uri }}</div>
@@ -13,7 +15,7 @@
         <div class="api-meta">
           <div class="meta-item">
             <i class="fas fa-bolt"></i>
-            <span>State: {{ apiData.status ? 'Enable' : 'Disable' }}</span>
+            <span>State: {{ apiData.status ? "Enable" : "Disable" }}</span>
           </div>
           <div class="meta-item">
             <i class="fas fa-tachometer-alt"></i>
@@ -30,7 +32,12 @@
     <!-- 接口描述部分 -->
     <h2 id="Interface Description" class="section-header" tabindex="-1">
       Interface Description
-      <a class="header-anchor" href="#Interface Description" aria-label="Permalink to &quot;Interface Description&quot;">​</a>
+      <a
+        class="header-anchor"
+        href="#Interface Description"
+        aria-label='Permalink to "Interface Description"'
+        >​</a
+      >
     </h2>
     <div class="section-content">
       <p>{{ apiData.description_en }}</p>
@@ -39,7 +46,12 @@
     <!-- 请求参数部分 -->
     <h2 id="Request parameters" class="section-header" tabindex="-1">
       Request parameters
-      <a class="header-anchor" href="#Request parameters" aria-label="Permalink to &quot;Request parameters&quot;">​</a>
+      <a
+        class="header-anchor"
+        href="#Request parameters"
+        aria-label='Permalink to "Request parameters"'
+        >​</a
+      >
     </h2>
     <div class="vp-table-wrapper">
       <table tabindex="0">
@@ -54,11 +66,18 @@
         </thead>
         <tbody>
           <tr v-for="param in requestParams" :key="param.key">
-            <td><code>{{ param.key }}</code></td>
+            <td>
+              <code>{{ param.key }}</code>
+            </td>
             <td>{{ param.field_type }}</td>
             <td>
-              <span :class="['required', param.not_null === 1 ? 'required-true' : 'required-false']">
-                {{ param.not_null === 1 ? 'Yes' : 'No' }}
+              <span
+                :class="[
+                  'required',
+                  param.not_null === 1 ? 'required-true' : 'required-false',
+                ]"
+              >
+                {{ param.not_null === 1 ? "Yes" : "No" }}
               </span>
             </td>
             <td>{{ param.value }}</td>
@@ -71,18 +90,35 @@
     <!-- 请求示例部分 -->
     <h3 id="Request Example" class="section-header" tabindex="-1">
       Request Example
-      <a class="header-anchor" href="#Request Example" aria-label="Permalink to &quot;Request Example&quot;">​</a>
+      <a
+        class="header-anchor"
+        href="#Request Example"
+        aria-label='Permalink to "Request Example"'
+        >​</a
+      >
     </h3>
     <div class="vp-doc">
       <div class="vp-code-block">
         <div class="language-json vp-adaptive-theme line-numbers-mode">
-          <button title="Copy Code" class="copy" @click="copyCode(requestExample)"></button>
+          <button
+            title="Copy Code"
+            class="copy"
+            @click="copyCode(requestExample)"
+          ></button>
           <span class="lang">json</span>
-          <pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0">
+          <pre
+            class="shiki shiki-themes github-light github-dark vp-code"
+            tabindex="0"
+          >
             <code>{{ formatJson(requestExample) }}</code>
           </pre>
           <div class="line-numbers-wrapper" aria-hidden="true">
-            <span v-for="line in requestExampleLines" :key="line" class="line-number">{{ line }}</span>
+            <span
+              v-for="line in requestExampleLines"
+              :key="line"
+              class="line-number"
+              >{{ line }}</span
+            >
           </div>
         </div>
       </div>
@@ -91,7 +127,12 @@
     <!-- 响应参数部分 -->
     <h2 id="Response parameters" class="section-header" tabindex="-1">
       Response parameters
-      <a class="header-anchor" href="#Response parameters" aria-label="Permalink to &quot;Response parameters&quot;">​</a>
+      <a
+        class="header-anchor"
+        href="#Response parameters"
+        aria-label='Permalink to "Response parameters"'
+        >​</a
+      >
     </h2>
     <div class="vp-table-wrapper">
       <table tabindex="0">
@@ -106,11 +147,18 @@
         </thead>
         <tbody>
           <tr v-for="param in responseParams" :key="param.key">
-            <td><code>{{ param.key }}</code></td>
+            <td>
+              <code>{{ param.key }}</code>
+            </td>
             <td>{{ param.field_type }}</td>
-                <td>
-              <span :class="['required', param.not_null === 1 ? 'required-true' : 'required-false']">
-                {{ param.not_null === 1 ? 'Yes' : 'No' }}
+            <td>
+              <span
+                :class="[
+                  'required',
+                  param.not_null === 1 ? 'required-true' : 'required-false',
+                ]"
+              >
+                {{ param.not_null === 1 ? "Yes" : "No" }}
               </span>
             </td>
             <td>{{ param.value }}</td>
@@ -123,18 +171,35 @@
     <!-- 响应示例部分 -->
     <h3 id="Response Example" class="section-header" tabindex="-1">
       Response Example
-      <a class="header-anchor" href="#Response Example" aria-label="Permalink to &quot;Response Example&quot;">​</a>
+      <a
+        class="header-anchor"
+        href="#Response Example"
+        aria-label='Permalink to "Response Example"'
+        >​</a
+      >
     </h3>
     <div class="vp-doc">
       <div class="vp-code-block">
         <div class="language-json vp-adaptive-theme line-numbers-mode">
-          <button title="Copy Code" class="copy" @click="copyCode(responseExample)"></button>
+          <button
+            title="Copy Code"
+            class="copy"
+            @click="copyCode(responseExample)"
+          ></button>
           <span class="lang">json</span>
-          <pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0">
+          <pre
+            class="shiki shiki-themes github-light github-dark vp-code"
+            tabindex="0"
+          >
             <code>{{ formatJson(responseExample) }}</code>
           </pre>
           <div class="line-numbers-wrapper" aria-hidden="true">
-            <span v-for="line in responseExampleLines" :key="line" class="line-number">{{ line }}</span>
+            <span
+              v-for="line in responseExampleLines"
+              :key="line"
+              class="line-number"
+              >{{ line }}</span
+            >
           </div>
         </div>
       </div>
@@ -143,7 +208,12 @@
     <!-- 更新信息部分 -->
     <h2 id="Update information" class="section-header" tabindex="-1">
       Update information
-      <a class="header-anchor" href="#Update information" aria-label="Permalink to &quot;Update information&quot;">​</a>
+      <a
+        class="header-anchor"
+        href="#Update information"
+        aria-label='Permalink to "Update information"'
+        >​</a
+      >
     </h2>
     <div class="update-info">
       <div class="meta-item">
@@ -172,195 +242,209 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
-import { useData } from 'vitepress'
+import { ref, onMounted, computed } from "vue";
+import { useData } from "vitepress";
 
-const { isDark } = useData()
-
+const { isDark } = useData();
+const props = defineProps({
+  name: {
+    type: String,
+    required: true,
+  },
+});
 // 定义请求参数接口
 interface RequestParam {
-  description: string
-  field_type: string
-  key: string
-  not_null: number
-  value: string
+  description: string;
+  field_type: string;
+  key: string;
+  not_null: number;
+  value: string;
 }
 
 // 定义响应参数接口
 interface ResponseParam {
-  description: string
-  key: string
-  field_type: string
-  value: string
-  not_null: number
+  description: string;
+  key: string;
+  field_type: string;
+  value: string;
+  not_null: number;
 }
 
 // 定义API响应数据结构
 interface ApiData {
-  id: number
-  api_name: string
-  api_uri: string
-  http_method: string
-  request_params: string
-  request_params_en: string
-  request_example: string
-  request_example_en: string
-  response_params: string
-  response_params_en: string
-  response_example: string
-  response_example_en: string
-  description: string
-  description_en: string
-  status: boolean
-  rate_limit: number
-  auth_mode: number
-  created_at: string
-  updated_at: string
+  id: number;
+  api_name: string;
+  api_uri: string;
+  http_method: string;
+  request_params: string;
+  request_params_en: string;
+  request_example: string;
+  request_example_en: string;
+  response_params: string;
+  response_params_en: string;
+  response_example: string;
+  response_example_en: string;
+  description: string;
+  description_en: string;
+  status: boolean;
+  rate_limit: number;
+  auth_mode: number;
+  created_at: string;
+  updated_at: string;
 }
 
 // 组件状态
-const loading = ref(true)
-const error = ref<string | null>(null)
+const loading = ref(true);
+const error = ref<string | null>(null);
 const apiData = ref<ApiData>({
   id: 0,
-  api_name: '',
-  api_uri: '',
-  http_method: 'POST',
-  request_params: '[]',
-  request_params_en: '[]',
-  request_example: '{}',
-  request_example_en: '{}',
-  response_params: '[]',
-  response_params_en: '[]',
-  response_example: '{}',
-  response_example_en: '{}',
-  description: '',
-  description_en: '',
+  api_name: "",
+  api_uri: "",
+  http_method: "POST",
+  request_params: "[]",
+  request_params_en: "[]",
+  request_example: "{}",
+  request_example_en: "{}",
+  response_params: "[]",
+  response_params_en: "[]",
+  response_example: "{}",
+  response_example_en: "{}",
+  description: "",
+  description_en: "",
   status: false,
   rate_limit: 0,
   auth_mode: 1,
-  created_at: '',
-  updated_at: ''
-})
+  created_at: "",
+  updated_at: "",
+});
 
 // 计算属性
 const methodClass = computed(() => {
-  const method = apiData.value.http_method.toLowerCase()
-  return `method-${method}`
-})
+  const method = apiData.value.http_method.toLowerCase();
+  return `method-${method}`;
+});
 
 const authModeText = computed(() => {
-  switch(apiData.value.auth_mode) {
-    case 0: return 'NONE'
-    case 1: return 'MD5'
-    case 2: return 'JWT'
-    case 3: return 'AES'
-    default: return '未指定'
+  switch (apiData.value.auth_mode) {
+    case 0:
+      return "NONE";
+    case 1:
+      return "MD5";
+    case 2:
+      return "JWT";
+    case 3:
+      return "AES";
+    default:
+      return "未指定";
   }
-})
+});
 
 const requestParams = computed<RequestParam[]>(() => {
   try {
-    return JSON.parse(apiData.value.request_params_en)
+    return JSON.parse(apiData.value.request_params_en);
   } catch (e) {
-    console.error('解析请求参数失败:', e)
-    return []
+    console.error("解析请求参数失败:", e);
+    return [];
   }
-})
+});
 
 const responseParams = computed<ResponseParam[]>(() => {
   try {
-    return JSON.parse(apiData.value.response_params_en)
+    return JSON.parse(apiData.value.response_params_en);
   } catch (e) {
-    console.error('解析响应参数失败:', e)
-    return []
+    console.error("解析响应参数失败:", e);
+    return [];
   }
-})
+});
 
 const requestExample = computed(() => {
   try {
-    return JSON.parse(apiData.value.request_example_en)
+    return JSON.parse(apiData.value.request_example_en);
   } catch (e) {
-    console.error('解析请求示例失败:', e)
-    return {}
+    console.error("解析请求示例失败:", e);
+    return {};
   }
-})
+});
 
 const responseExample = computed(() => {
   try {
-    return JSON.parse(apiData.value.response_example_en)
+    return JSON.parse(apiData.value.response_example_en);
   } catch (e) {
-    console.error('解析响应示例失败:', e)
-    return {}
+    console.error("解析响应示例失败:", e);
+    return {};
   }
-})
+});
 
 const requestExampleLines = computed(() => {
-  const jsonStr = JSON.stringify(requestExample.value, null, 2)
-  return Array.from({ length: jsonStr.split('\n').length }, (_, i) => i + 1)
-})
+  const jsonStr = JSON.stringify(requestExample.value, null, 2);
+  return Array.from({ length: jsonStr.split("\n").length }, (_, i) => i + 1);
+});
 
 const responseExampleLines = computed(() => {
-  const jsonStr = JSON.stringify(responseExample.value, null, 2)
-  return Array.from({ length: jsonStr.split('\n').length }, (_, i) => i + 1)
-})
+  const jsonStr = JSON.stringify(responseExample.value, null, 2);
+  return Array.from({ length: jsonStr.split("\n").length }, (_, i) => i + 1);
+});
 
 // 格式化 JSON 显示
 const formatJson = (json: any): string => {
-  if (typeof json === 'string') {
+  if (typeof json === "string") {
     try {
-      return JSON.stringify(JSON.parse(json), null, 2)
+      return JSON.stringify(JSON.parse(json), null, 2);
     } catch {
-      return json
+      return json;
     }
   }
-  return JSON.stringify(json, null, 2)
-}
+  return JSON.stringify(json, null, 2);
+};
 
 // 复制代码
 const copyCode = (code: any) => {
-  const text = typeof code === 'string' ? code : JSON.stringify(code, null, 2)
-  navigator.clipboard.writeText(text)
+  const text = typeof code === "string" ? code : JSON.stringify(code, null, 2);
+  navigator.clipboard
+    .writeText(text)
     .then(() => {
       // 可以添加复制成功提示
-      console.log('代码已复制')
+      console.log("代码已复制");
     })
-    .catch(err => {
-      console.error('复制失败:', err)
-    })
-}
-
+    .catch((err) => {
+      console.error("复制失败:", err);
+    });
+};
+declare const __VITE_ENV__: Record<string, string>;
 // 获取 API 数据
 const fetchApiData = async () => {
-  loading.value = true
-  error.value = null
-  
+  loading.value = true;
+  error.value = null;
+
   try {
     // 实际 API 端点
-    const response = await fetch('http://127.0.0.1:9501/common/api/collection_order_create')
-    
+    const apiUrl = `${__VITE_ENV__.VITE_API_URL}/common/api/${props.name}`;
+    const response = await fetch(apiUrl);
+
     if (!response.ok) {
-      throw new Error(`API 请求失败，状态码: ${response.status}`)
+      throw new Error(`API 请求失败，状态码: ${response.status}`);
     }
-    
-    const data = await response.json()
-    
+
+    const data = await response.json();
+
     if (data.success && data.data) {
-      apiData.value = data.data
+      apiData.value = data.data;
     } else {
-      throw new Error(data.message || '获取 API 数据失败')
+      throw new Error(data.message || "获取 API 数据失败");
     }
   } catch (err) {
-    error.value = `获取 API 数据失败: ${err instanceof Error ? err.message : String(err)}`
-    console.error('API 请求错误:', err)
+    error.value = `获取 API 数据失败: ${
+      err instanceof Error ? err.message : String(err)
+    }`;
+    console.error("API 请求错误:", err);
   } finally {
-    loading.value = false
+    loading.value = false;
   }
-}
+};
 
 onMounted(() => {
-  fetchApiData()
-})
+  fetchApiData();
+});
 </script>
 
 <style scoped>
@@ -484,7 +568,6 @@ onMounted(() => {
 }
 
 .section-content {
-
   color: var(--vp-c-text-1);
   line-height: 1.7;
 }
@@ -494,7 +577,6 @@ onMounted(() => {
   margin: 1rem 0;
   width: 100%;
   background-color: var(--vp-c-bg);
-
 }
 
 /* 表格基础样式 */
@@ -514,7 +596,8 @@ thead {
 }
 
 /* 单元格通用样式 */
-th, td {
+th,
+td {
   padding: 12px 16px;
   text-align: left;
   word-break: break-word;
@@ -562,16 +645,17 @@ tbody tr:hover {
     border-radius: 6px;
   }
 
-  th, td {
+  th,
+  td {
     padding: 8px 12px;
     font-size: 14px;
   }
-  
+
   th:nth-child(1),
   td:nth-child(1) {
     min-width: 120px;
   }
-  
+
   th:nth-child(5),
   td:nth-child(4) {
     min-width: 150px;
@@ -727,7 +811,11 @@ pre.shiki {
 }
 
 .refresh-btn {
-  background: linear-gradient(135deg, var(--vp-c-brand), var(--vp-c-brand-dark));
+  background: linear-gradient(
+    135deg,
+    var(--vp-c-brand),
+    var(--vp-c-brand-dark)
+  );
   color: white;
   border: none;
   padding: 12px 30px;
@@ -760,44 +848,48 @@ pre.shiki {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 768px) {
   .card-header {
     padding: 20px;
   }
-  
+
   .api-title {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
-  
+
   .api-meta {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .api-name {
     font-size: 1.5rem;
   }
-  
+
   .section-header {
     font-size: 1.3rem;
   }
-  
+
   th,
   td {
     padding: 8px 12px;
     font-size: 14px;
   }
-  
+
   .vp-code-group {
     margin: 10px 0;
   }
-  
+
   .shiki {
     padding: 12px 16px;
     font-size: 13px;
@@ -810,5 +902,4 @@ pre.shiki {
   margin: 1rem 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
-
 </style>
