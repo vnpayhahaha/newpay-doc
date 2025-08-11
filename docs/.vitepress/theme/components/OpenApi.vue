@@ -407,6 +407,7 @@ const fetchApiData = async () => {
   error.value = null;
 
   try {
+    console.log("获取 API 数据...",__VITE_ENV__.VITE_API_URL);
     // 实际 API 端点
     const apiUrl = `${__VITE_ENV__.VITE_API_URL}/common/api/${props.name}`;
     const response = await fetch(apiUrl);

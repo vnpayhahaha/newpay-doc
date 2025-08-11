@@ -30,7 +30,7 @@ export const sidebar = [
         text: "Receive Payment",
         items: [
           { text: "Create Order", link: "/en/collection_order/create" },
-          { text: "Order Inquiry", link: "/en/examples/api/wechat" },
+          { text: "Order Inquiry", link: "/en/collection_order/query"},
           { text: "Callback Notification", link: "/en/examples/api/qq" },
           { text: "Submit UTR", link: "/en/examples/api/qq" },
         ],
@@ -39,7 +39,7 @@ export const sidebar = [
         text: "Payment",
         items: [
           { text: "Create Order", link: "/en/disbursement_order/create" },
-          { text: "Order Inquiry", link: "/en/examples/api/wechat" },
+          { text: "Order Inquiry", link: "/en/disbursement_order/query" },
           { text: "Callback Notification", link: "/en/examples/api/qq" },
         ],
       },

@@ -27,7 +27,7 @@ export const sidebar = [
         text: "收款",
         items: [
           { text: "创建订单", link: "/zh/collection_order/create" },
-          { text: "查询订单", link: "/zh/examples/api/wechat" },
+          { text: "查询订单", link: "/zh/collection_order/query" },
           { text: "回调通知", link: "/zh/examples/api/qq" },
           { text: "提交UTR", link: "/zh/examples/api/qq" },
         ],
@@ -36,7 +36,7 @@ export const sidebar = [
         text: "付款",
         items: [
           { text: "创建订单", link: "/zh/disbursement_order/create" },
-          { text: "查询订单", link: "/zh/examples/api/wechat" },
+          { text: "查询订单", link: "/zh/disbursement_order/query" },
           { text: "回调通知", link: "/zh/examples/api/qq" },
         ],
       },

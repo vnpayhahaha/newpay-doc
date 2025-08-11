@@ -1,0 +1,3 @@
+# 查询收款订单
+
+<OpenApi name="collection_order_query" />
