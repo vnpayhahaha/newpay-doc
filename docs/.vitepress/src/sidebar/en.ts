@@ -32,7 +32,7 @@ export const sidebar = [
           { text: "Create Order", link: "/en/collection_order/create" },
           { text: "Order Inquiry", link: "/en/collection_order/query"},
           { text: "Callback Notification", link: "/en/examples/api/qq" },
-          { text: "Submit UTR", link: "/en/examples/api/qq" },
+          { text: "Submit UTR", link: "/en/collection_order/submitted_utr" },
         ],
       },
       {
@@ -43,7 +43,7 @@ export const sidebar = [
           { text: "Callback Notification", link: "/en/examples/api/qq" },
         ],
       },
-      { text: "Balance Inquiry", link: "/en/examples/api/test" },
+      { text: "Balance Inquiry", link: "/en/tenant_account/query_balance"},
     ],
   },
   {
