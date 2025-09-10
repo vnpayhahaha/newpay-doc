@@ -10,18 +10,22 @@
 > Original parameters:
 ```json
 {
-    "mer_no": "TEST001",
-    "order_amount": "100.00",
-    "mer_order_no": "TEST123456"
+    "tenant_id": "000001",
+    "app_key": "0cb3bd11ae",
+    "timestamp": "1757491985",
+    "tenant_order_no": "test250910001",
+    "amount": "35.44",
+    "notify_url": "",
+    "sign":"3cb2e3c29cd79ed0fa4043c1b2540c28"
 }
 ```
 
 > After sorting, concatenate:
 ```string
-mer_no=TEST001&mer_order_no=TEST123456&order_amount=100.00&key=YOUR_KEY
+amount=35.44&app_key=0cb3bd11ae&tenant_id=000001&tenant_order_no=test250910001&timestamp=1757491985&secret=ODE5Y2I5OTkwNjMzM2RjZWU1OTAyNzJiOGVjMjQ1MDYwN2QyYmQ5ODZmYzA2YWI1MGM3OTIwMDIyOWIyOWZiNA==
 ```
 
 > Signature obtained after MD5 encryption:
 ```string
-0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c
+3cb2e3c29cd79ed0fa4043c1b2540c28
 ```

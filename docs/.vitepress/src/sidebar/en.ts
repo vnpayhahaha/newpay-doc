@@ -8,8 +8,8 @@ export const sidebar = [
           { text: "Environment Information", link: "/en/base/environmental" },
           { text: "Groundwork", link: "/en/base/prepare" },
           {
-            text: "Fixed parameter description",
-            link: "/en/examples/api/test",
+            text: "Public parameter description",
+            link: "/en/base/common_parameters",
           },
         ],
       },

@@ -7,7 +7,7 @@ export const sidebar = [
         items: [
           { text: "环境信息", link: "/zh/base/environmental" },
           { text: "接入准备", link: "/zh/base/prepare" },
-          { text: "固定参数说明", link: "/zh/examples/api/test" },
+          { text: "公共参数说明", link: "/zh/base/common_parameters" },
         ],
       },
       {
