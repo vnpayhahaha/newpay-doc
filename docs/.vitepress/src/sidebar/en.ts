@@ -31,7 +31,7 @@ export const sidebar = [
         items: [
           { text: "Create Order", link: "/en/collection_order/create" },
           { text: "Order Inquiry", link: "/en/collection_order/query"},
-          { text: "Callback Notification", link: "/en/examples/api/qq" },
+          { text: "Callback Notification", link: "/en/collection_order/notify" },
           { text: "Submit UTR", link: "/en/collection_order/submitted_utr" },
         ],
       },
@@ -40,7 +40,7 @@ export const sidebar = [
         items: [
           { text: "Create Order", link: "/en/disbursement_order/create" },
           { text: "Order Inquiry", link: "/en/disbursement_order/query" },
-          { text: "Callback Notification", link: "/en/examples/api/qq" },
+          { text: "Callback Notification", link: "/en/disbursement_order/notify" },
         ],
       },
       { text: "Balance Inquiry", link: "/en/tenant_account/query_balance"},

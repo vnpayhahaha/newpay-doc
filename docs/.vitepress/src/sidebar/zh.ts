@@ -28,7 +28,7 @@ export const sidebar = [
         items: [
           { text: "创建订单", link: "/zh/collection_order/create" },
           { text: "查询订单", link: "/zh/collection_order/query" },
-          { text: "回调通知", link: "/zh/examples/api/qq" },
+          { text: "回调通知", link: "/zh/collection_order/notify" },
           { text: "提交UTR", link: "/zh/collection_order/submitted_utr" },
         ],
       },
@@ -37,7 +37,7 @@ export const sidebar = [
         items: [
           { text: "创建订单", link: "/zh/disbursement_order/create" },
           { text: "查询订单", link: "/zh/disbursement_order/query" },
-          { text: "回调通知", link: "/zh/examples/api/qq" },
+          { text: "回调通知", link: "/zh/disbursement_order/notify" },
         ],
       },
       { text: "余额查询", link: "/zh/tenant_account/query_balance" },

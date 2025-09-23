@@ -1,3 +1,3 @@
 # query balance
 
-<OpenApi name="query_balance" />
+<OpenApiEn name="query_balance" />

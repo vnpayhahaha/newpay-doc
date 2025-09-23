@@ -1,3 +1,3 @@
 # Submitted UTR
 
-<OpenApi name="submitted_utr" />
+<OpenApiEn name="submitted_utr" />
