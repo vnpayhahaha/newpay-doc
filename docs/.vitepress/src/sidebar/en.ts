@@ -51,7 +51,7 @@ export const sidebar = [
     items: [
       {
         text: "Error Code",
-        link: "/en/data_dictionary/error_code",
+        link: "/en/dictionary/error_code",
       },
       {
         text: "Collection Order Status",
