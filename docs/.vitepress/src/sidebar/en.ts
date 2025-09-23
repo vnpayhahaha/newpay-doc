@@ -51,12 +51,15 @@ export const sidebar = [
     items: [
       {
         text: "Error Code",
+        link: "/en/data_dictionary/error_code",
       },
       {
         text: "Collection Order Status",
+        link: "/en/dictionary/collection_status",
       },
       {
         text: "Payment Order Status",
+        link: "/en/dictionary/disbursement_status",
       },
     ],
   },

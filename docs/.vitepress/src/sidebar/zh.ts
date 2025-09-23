@@ -48,12 +48,15 @@ export const sidebar = [
     items: [
       {
         text: "错误代码",
+        link: "/zh/dictionary/error_code",
       },
       {
         text: "收款订单状态",
+        link: "/zh/dictionary/collection_status",
       },
       {
         text: "付款订单状态",
+        link: "/zh/dictionary/disbursement_status",
       },
     ],
   },
