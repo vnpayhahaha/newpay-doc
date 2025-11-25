@@ -19,7 +19,7 @@
           </div>
           <div class="meta-item">
             <i class="fas fa-tachometer-alt"></i>
-            <span>Speed limit: {{ apiData.rate_limit }} Times/minute</span>
+            <span>Speed limit: {{ apiData.rate_limit }} Times/second</span>
           </div>
           <div class="meta-item">
             <i class="fas fa-lock"></i>
