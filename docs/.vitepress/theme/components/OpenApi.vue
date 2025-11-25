@@ -26,6 +26,10 @@
             <span>认证方式: {{ authModeText }}</span>
           </div>
         </div>
+        <div class="rate-limit-notice">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span><strong>重要提示：</strong>相同参数请求每分钟限制1次</span>
+        </div>
       </div>
     </div>
 
@@ -532,6 +536,67 @@ onMounted(() => {
   border-radius: 20px;
   font-size: 0.95rem;
   color: var(--vp-c-text-1);
+}
+
+.rate-limit-notice {
+  margin-top: 15px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #fff3cd 0%, #fff8e1 100%);
+  border: 2px solid #ffc107;
+  border-left: 6px solid #ff9800;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #856404;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+.rate-limit-notice i {
+  color: #ff9800;
+  font-size: 1.2rem;
+  animation: shake 3s ease-in-out infinite;
+}
+
+.rate-limit-notice strong {
+  color: #d84315;
+  font-weight: 700;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-left-color: #ff9800;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+  }
+  50% {
+    border-left-color: #f57c00;
+    box-shadow: 0 2px 12px rgba(255, 152, 0, 0.25);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(-5deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: rotate(5deg);
+  }
+}
+
+/* 暗色模式适配 */
+.dark .rate-limit-notice {
+  background: linear-gradient(135deg, #3e2723 0%, #4e342e 100%);
+  border-color: #ff9800;
+  color: #ffb74d;
+}
+
+.dark .rate-limit-notice strong {
+  color: #ff6e40;
 }
 
 .section-header {
